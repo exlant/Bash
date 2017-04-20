@@ -1,0 +1,62 @@
+[Desktop Entry]
+Name=eWebServer
+Exec=eWebServer
+Icon=eWebServer.png
+Terminal=true
+Type=Application
+Categories=Utility
+StartupNotify=true
+X-Ayatana-Desktop-Shortcuts=A2Start;A2Stop;A2Restart;A2Status;CreateHost;MysqlStart;MysqlStop;MysqlRestart;MysqlStatus;FullStart;FullRestart;FullStop;FullCheck
+Keywords=eweb;myweb;eWebServer
+
+[A2Start Shortcut Group]
+Name=Apache-start
+Exec=terminator -e "eWebServer -q a2start"
+
+[A2Stop Shortcut Group]
+Name=Apache-stop
+Exec=gnome-terminal -e "eWebServer -q a2stop"
+
+[A2Restart Shortcut Group]
+Name=Apache-restart
+Exec=gnome-terminal -e "eWebServer -q a2restart"
+
+[A2Status Shortcut Group]
+Name=Apache-status
+Exec=gnome-terminal -e "eWebServer a2status"
+
+[CreateHost Shortcut Group]
+Name=Create-host
+Exec=gnome-terminal -e "eWebServer createHost"
+
+[MysqlStart Shortcut Group]
+Name=Mysql-start
+Exec=terminator -e "eWebServer -q mysqlStart"
+
+[MysqlStop Shortcut Group]
+Name=Mysql-stop
+Exec=gnome-terminal -e "eWebServer -q mysqlStop"
+
+[MysqlRestart Shortcut Group]
+Name=Mysql-restart
+Exec=gnome-terminal -e "eWebServer -q mysqlRestart"
+
+[MysqlStatus Shortcut Group]
+Name=Mysql-status
+Exec=gnome-terminal -e "eWebServer mysqlStatus"
+
+[FullStart Shortcut Group]
+Name=Full Start
+Exec=gnome-terminal -e "eWebServer -q fullStart"
+
+[FullRestart Shortcut Group]
+Name=Full Restart
+Exec=gnome-terminal -e "eWebServer -q fullRestart"
+
+[FullStop Shortcut Group]
+Name=Full Stop
+Exec=gnome-terminal -e "eWebServer -q fullStop"
+
+[FullCheck Shortcut Group]
+Name=Full Check
+Exec=gnome-terminal -e "eWebServer fullCheck"

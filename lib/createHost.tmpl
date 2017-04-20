@@ -1,0 +1,13 @@
+<VirtualHost *:80>
+	ServerName :name:
+	ServerAlias www.:name:
+
+	ServerAdmin :mail:
+	DocumentRoot :home:/:name:/:public:
+
+	ErrorLog :logPath:/error.log
+	CustomLog :logPath:/access.log combined
+	<Directory /var/www/host1.server1>
+	    AllowOverride All
+	</Directory>
+</VirtualHost>
