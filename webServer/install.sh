@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-pathFrom=~/NeedleResourse/scripts/bash/webServer
+pathFrom="$(pwd)"
 pathTo=~/.bin
-pathFromLib=~/NeedleResourse/scripts/bash/lib
+pathFromLib="$(pwd)/../lib"
 
 if [ ! -d $pathTo ]; then
     mkdir -p -m 655 $pathTo
