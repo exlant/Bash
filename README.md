@@ -6,7 +6,7 @@ The scripts were written for familiarization with the bash in education purpose.
 
 Even so, they solve some problems.
 
-Consist from:
+Pakage consist from:
 
 1.  eWebServer - is wrapper for LAMP, who can start,stop,restart LAMP services(apache2, mysql) from icon's quicklist located in unity panel.
 
