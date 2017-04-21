@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-pathFrom="$(pwd)"
+pathFrom="$(dirname $0)"
 pathTo=~/.bin
-pathFromLib="$(pwd)/../lib"
+pathFromLib="$(dirname $0)/../lib"
 
 if [ ! -d $pathTo ]; then
     mkdir -p -m 655 $pathTo
