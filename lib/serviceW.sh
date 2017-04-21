@@ -30,15 +30,15 @@ help()
 
 case $action in
     start)
-        service $service start
+        sudo service $service start
     ;;
 
     stop)
-        service $service stop
+        sudo service $service stop
     ;;
 
     restart)
-        service $service restart
+        sudo service $service restart
     ;;
 
     status)
