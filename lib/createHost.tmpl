@@ -7,7 +7,7 @@
 
 	ErrorLog :logPath:/error.log
 	CustomLog :logPath:/access.log combined
-	<Directory /var/www/host1.server1>
+	<Directory :home:/:name:>
 	    AllowOverride All
 	</Directory>
 </VirtualHost>
