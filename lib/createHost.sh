@@ -34,6 +34,9 @@ checkResponse()
     return 0
 }
 
+echo -en "${BLUE}Approve public folder: ${NORMAL}"
+read -ei "${public}" public
+
 ## set host name, and directory for site's files
 while [ -z $siteDir ]; do
     
