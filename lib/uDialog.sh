@@ -23,3 +23,8 @@ checkAnswerYN()
     fi
     return 0
 }
+
+checkTest()
+{
+    echo -en "Test";
+}
